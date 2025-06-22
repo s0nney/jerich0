@@ -9,7 +9,7 @@ Key differences from the original:
 - Audio CAPTCHA support completely removed
 - Supports alphanumeric characters (A-Z, 0-9) instead of just digits
 - Simplified codebase focused only on image CAPTCHAs
-- Case-insensitive verification (accepts upper or lowercase input)
+- Case-sensitive verification 
 
 An image representation is a PNG-encoded image with the solution printed in a distorted way that makes it hard for computers to solve using OCR.
 
