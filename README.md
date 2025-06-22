@@ -1,4 +1,4 @@
-Package captcha
+jerich0
 =====================
 
 **A streamlined fork of github.com/dchest/captcha without audio support**
