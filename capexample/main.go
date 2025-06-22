@@ -113,7 +113,7 @@ function reload() {
 <p><img id=image src="/captcha/{{.CaptchaId}}.png" alt="Captcha image"></p>
 <a href="#" onclick="reload()">Reload</a> 
 <input type=hidden name=captchaId value="{{.CaptchaId}}"><br>
-<input style="text-transform:uppercase" name=captchaSolution 
+<input name=captchaSolution 
        title="Only letters and numbers are allowed"
        required autocomplete="off">
 <input type=submit value=Submit>
