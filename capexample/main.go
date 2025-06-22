@@ -7,8 +7,7 @@ import (
 	"net/http"
 	"text/template"
 
-	"github.com/dchest/captcha"
-	// Update with your package path
+	captcha "github.com/s0nney/jerich0"
 )
 
 var (
