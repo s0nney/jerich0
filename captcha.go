@@ -139,15 +139,21 @@ func Verify(id string, digits []byte) bool {
 }
 
 func VerifyString(id string, answer string) bool {
-	ns := make([]byte, 0, len(answer))
-	for _, c := range answer {
+	if answer == "" {
+		return false
+	}
+	ns := make([]byte, len(answer))
+	for i := range ns {
+		c := answer[i]
 		switch {
 		case '0' <= c && c <= '9':
-			ns = append(ns, byte(c-'0')) // 0-9
+			ns[i] = c - '0'
 		case 'A' <= c && c <= 'Z':
-			ns = append(ns, byte(c-'A'+10)) // A=10, B=11, etc.
-		case 'a' <= c && c <= 'z':
-			ns = append(ns, byte(c-'a'+10))
+			// Keep uppercase letters as-is (10-35)
+			ns[i] = c - 'A' + 10
+		// Remove lowercase handling to make it case-sensitive
+		case c == ' ' || c == ',':
+			// ignore
 		default:
 			return false
 		}
