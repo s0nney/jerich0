@@ -1,6 +1,9 @@
 jerich0
 =====================
 
+# HIGHLY EXPERIMENTAL
+
+
 **A streamlined fork of github.com/dchest/captcha without audio support**
 
 This package implements generation and verification of image CAPTCHAs, forked from dchest/captcha with audio capabilities removed. It provides visual challenges with letters and numbers designed to be difficult for OCR systems to solve.
