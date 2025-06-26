@@ -1,8 +1,5 @@
-jerich0
+Package captcha
 =====================
-
-# HIGHLY EXPERIMENTAL
-
 
 **A streamlined fork of github.com/dchest/captcha without audio support**
 
@@ -12,7 +9,7 @@ Key differences from the original:
 - Audio CAPTCHA support completely removed
 - Supports alphanumeric characters (A-Z, 0-9) instead of just digits
 - Simplified codebase focused only on image CAPTCHAs
-- Case-sensitive verification 
+- Case-insensitive verification (accepts upper or lowercase input)
 
 An image representation is a PNG-encoded image with the solution printed in a distorted way that makes it hard for computers to solve using OCR.
 
